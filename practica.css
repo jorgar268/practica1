@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url(../webfonts/fa-solid-900.eot);
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dbd3cc;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #2a2a2a;
+}
+
+.navbar__item {
+  float: left;
+  display: block;
+  color: #e4dede;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar__item--selected {
+  color: #dfee14;
+}
+
+.navbar__item:hover {
+  background-color: #ddd;
+  color: black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navbar__Buscador {
+  margin-left: auto;
+}
+
+.navbar__Buscador-item {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar__Buscador-boton {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__Buscador-boton:hover {
+  background: #ccc;
+}
+
+.updates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.updates__img {
+  width: 100%;
+}
+
+.updates__img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.5;
+}
+
+/*estilo parte central */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Las 3 columnas juntas  */
+}
+
+.row__column {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+  background-color: #aaa;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+  color: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__media {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__Buscador {
+    float: none;
+  }
+  .navbar__Buscador-boton {
+    float: none;
+    text-align: left;
+    margin-top: 0;
+    padding: 14px;
+  }
+  .navbar__Buscador-item {
+    border: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 200px) {
+  .navbar {
+    background: green;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=practica.css.map */
