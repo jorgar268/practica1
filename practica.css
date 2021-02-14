@@ -163,7 +163,7 @@ body {
 
 @media (max-width: 200px) {
   .navbar {
-    background: green;
+    background: #414641;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
