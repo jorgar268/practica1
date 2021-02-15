@@ -3,9 +3,11 @@
 // $layout_bp_desktop: 1280px;
 
   //ESTILOS CABECERA 
-  * {
-    box-sizing: border-box;
-  }
+* {
+ box-sizing: border-box;
+ }
+//lo del box-sizing es para determinar si los bordes de las "cajas"
+// quedan dentro del ancho de las mismas o son exteriores a estas
 //PARA CARGAR ICONOS
 @font-face {
   font-family: "Font Awesome 5 Free";
@@ -128,8 +130,7 @@ body {
       display:flex;
       flex-direction:row;
       justify-content: space-between;
- 
-    height:auto;
+      height:auto;
    
       }}
 
