@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Font Awesome 5 Free";
   src: url(../webfonts/fa-solid-900.eot);
