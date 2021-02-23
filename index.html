@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Introducimos esta meta para que funcionen las medias queries 
+    Esto le dirá al navegador que el ancho de la vista debe ser como máximo el ancho del dispositivo, 
+    de esta manera deberíamos evitar tener scroll horizontal en nuestra web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- para poder usar iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Para las letras del cuerpo -->
+    <title>Practica</title>
+
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header" >
+      <div class="navbar">
+        <a href="mailto:jlaguilargomez@gmail.com" target="_blank" class="navbar__item">INICIO</a>
+        <a href="http://google.es" target="_blank" class="navbar__item">Idioma</a>
+        <a href="http://google.es" target="_blank" class="navbar__item navbar__item--selected">Log-in </a>
+      </div>
+
+      <div class="search-bar">
+        <input class="search-bar__input" type="text" placeholder="Buscar.." name="search" />
+        <button class="search-bar__button" type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="updates">
+        <h1 class="updates__text">Actualizaciones</h1>
+      </div>
+
+      <div class="row">
+        <div class="row__column">
+          ENTRAR ZONA ENTRENAMIENTO
+          <img class="img" src="./assets/svg/enter.svg" />
+        </div>
+        <div class="row__column">
+          MULTIJUGADOR
+          <img class="img" src="./assets/svg/sphere.svg" />
+        </div>
+        <div class="row__column">
+          MARCADORES
+          <img class="img" src="./assets/svg/list-numbered.svg" />
+        </div>
+      </div>
+      
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copy">© 2021, España. Todos los derechos reservados.</p>
+      <div class="footer__media">
+        <ul class="footer__media">
+          <li><i class="fab fa-twitter-square"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-facebook-square"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
